@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import CanvasComponent from './components/canvas/CanvasComponent';
+import { Animator, ScrollContainer, ScrollPage, Sticky, batch, FadeOut, MoveIn, FadeIn, MoveOut, ZoomOut, StickyIn } from 'react-scroll-motion';
+
+import About from './components/about/About';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ScrollContainer>
+      <ScrollPage>
+        <Animator animation={batch(StickyIn())}>
+          <CanvasComponent />
+        </Animator>
+      </ScrollPage>
+
+      <ScrollPage>
+        <Animator>
+          <About />
+        </Animator>
+      </ScrollPage>
+    </ScrollContainer>
   );
 }
 
