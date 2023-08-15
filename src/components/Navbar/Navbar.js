@@ -3,8 +3,11 @@ import './Navbar.css';
 
 export default function Navbar() {
     return (
-        <div>
-            <h1>TAGUEULE</h1>
+        <div class="navbar">
+            <p className='nav-item'>HOME</p>
+            <p className='nav-item'>ABOUT</p>
+            <p className='nav-item'>PORTFOLIO</p>
+            <p className='nav-item'>CONTACT</p>
         </div>
     )
 }
