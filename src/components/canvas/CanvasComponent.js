@@ -1,7 +1,6 @@
 import React from "react";
 import Particles from 'react-tsparticles';
 import { loadFull } from "tsparticles";
-// import { ArrowDownward } from "@mui/icons-material";
 import './Canvas.css';
 
 export default function CanvasComponent() {
@@ -9,27 +8,26 @@ export default function CanvasComponent() {
         await loadFull(main);
     };
 
-    const particlesLoaded = (container) => {
-        // This function should be called after particles are loaded
-        console.log(container);
-    };
+    const particlesLoaded = (particles) => {
+        console.log(particles)
+    }
 
     return (
         <div className='canvas-container'>
             <Particles
                 id='tsparticles'
-                init={particlesInit}
                 loaded={particlesLoaded}
+                init={particlesInit}
                 options={{
                     background: {
                         color: 'rgba(37,41,52,255)',
                     },
                     particles: {
                         number: {
-                            value: 50,
+                            value: 60,
                             density: {
                                 enable: true,
-                                value_area: 800
+                                value_area: 1200
                             }
                         },
                         color: {
@@ -45,7 +43,7 @@ export default function CanvasComponent() {
                                 enable: false,
                                 speed: 1,
                                 opacity_min: 0.1,
-                                sync: false
+                                sync: false,
                             }
                         },
                         size: {
@@ -60,14 +58,14 @@ export default function CanvasComponent() {
                         },
                         line_linked: {
                             enable: true,
-                            distance: 100,
-                            color: "#1bd1e3",
+                            distance: 110,
+                            color: "#1bd1e3", // amber: "#FFBF00" | turquoise: "#1bd1e3"
                             opacity: 1,
                             width: 3
                         },
                         move: {
                             enable: true,
-                            speed: 2,
+                            speed: 1.5,
                             direction: "none",
                             random: false,
                             straight: false,
@@ -124,7 +122,7 @@ export default function CanvasComponent() {
             />
             <div className='text-content'>
                 <p>Hi, my name is <span className="red-text">Jeremy</span>.</p>
-                <p>I'm a <span className="red-text">Full-Stack Developer</span> based in <span className="red-text">San Diego, California</span>.</p>
+                <p>I'm a  <span className="red-text">Full-Stack Developer</span>.</p>
             </div>
         </div>
     )

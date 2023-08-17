@@ -1,27 +1,19 @@
-import { Animator, ScrollContainer, ScrollPage, Sticky, batch, FadeOut, MoveIn, FadeIn, MoveOut, ZoomOut, StickyIn } from 'react-scroll-motion';
-
 import CanvasComponent from './components/canvas/CanvasComponent';
 import Navbar from './components/Navbar/Navbar';
 import About from './components/about/About';
+import Projects from './components/Projects/Projects';
 
-function App() {
+export default function App() {
   return (
-    <ScrollContainer>
-      <ScrollPage>
-        <Animator animation={batch(StickyIn())}>
-          <CanvasComponent />
-        </Animator>
-      </ScrollPage>
-
-      <Navbar />
-
-      <ScrollPage>
-        <Animator>
+    <div className="app-container">
+      <CanvasComponent />
+      <div className='content'>
+        <Navbar />
+        <div className="content-container">
           <About />
-        </Animator>
-      </ScrollPage>
-    </ScrollContainer>
+          {/* <Projects /> */}
+        </div>
+      </div>
+    </div>
   );
 }
-
-export default App;

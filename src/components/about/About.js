@@ -1,15 +1,13 @@
 import React from "react";
-import './About.css';
-import { Animator, ScrollPage } from "react-scroll-motion";
+import "./About.css";
 
 export default function About() {
     return (
-        <ScrollPage>
-            <Animator>
-                <div>
-                    <p className='youbitch'>Well well well. Hello there! Welcome!</p>
-                </div>
-            </Animator>
-        </ScrollPage>
-    )
+        <div className="about-container">
+            <div className="title-container">
+                <div className="title">ABOUT</div>
+            </div>
+            <div className="underline"></div>
+        </div>
+    );
 }

@@ -1,4 +1,26 @@
-.youbitch {
-    top: 50%;
-    left: 50%;
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    padding-top: 90px;
+    height: 8000px;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title {
+    font-size: 45pt;
+    color: #444649;
+    display: inline-block;
+}
+
+.underline {
+    background: #444649;
+    height: 5px;
+    width: 90px;
+    margin-top: 12px;
 }
