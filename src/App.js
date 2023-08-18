@@ -6,12 +6,14 @@ import Projects from './components/Projects/Projects';
 export default function App() {
   return (
     <div className="app-container">
-      <CanvasComponent />
+      <CanvasComponent id='home' />
       <div className='content'>
         <Navbar />
         <div className="content-container">
-          <About />
-          {/* <Projects /> */}
+          <About id='about' />
+          <Projects id='projects' />
+          {/* Contact */}
+          {/* Footer */}
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ export default function CanvasComponent() {
     }
 
     return (
-        <div className='canvas-container'>
+        <div id='home' className='canvas-container'>
             <Particles
                 id='tsparticles'
                 loaded={particlesLoaded}
