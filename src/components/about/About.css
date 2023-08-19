@@ -31,6 +31,7 @@
 }
 
 .about-content {
+    margin-top: 30px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -49,6 +50,18 @@
 .bio-color {
     color: #00b5c2;
     font-weight: bold;
+}
+
+.resume {
+    font-size: 22pt;
+    font-family: 'Urbanist';
+    color: white;
+    background-color: transparent;
+    background-color: #00b5c2;
+}
+
+.resume:hover {
+    background-color: #e31b6d;
 }
 
 .skills {
@@ -93,4 +106,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 400px) {
+    .about-container {
+        width: 100vw;
+    }
 }

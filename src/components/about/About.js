@@ -19,14 +19,14 @@ function MoveInWhenVisibleBio({ children }) {
     );
 }
 
-// TODO: Fix the alignment after animation. For some reason it doesn't go where it should and doesn't align well
 function MoveInWhenVisibleSkills({ children }) {
     return (
         <motion.div
             initial={{ x: -1000 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.2 }}
+            transition={{ duration: 1 }}
+            whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
         >
             {children}
         </motion.div>
@@ -65,139 +65,20 @@ export default function About() {
                 </div>
 
                 <div className='skills'>
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <FaHtml5 />
+                    {skills.map((skill) => (
+                        <MoveInWhenVisibleSkills>
+                            <div className='skill'>
+                                <div className='icon'>
+                                    <div className='icon-circle'>
+                                        {skill.icon}
+                                    </div>
                                 </div>
+                                {skill.name}
                             </div>
-                            HTML
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <FaCss3Alt />
-                                </div>
-                            </div>
-                            CSS
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <SiJavascript />
-                                </div>
-                            </div>
-                            JavaScript
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <SiTypescript />
-                                </div>
-                            </div>
-                            TypeScript
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <FaPython />
-                                </div>
-                            </div>
-                            Python
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <FaReact />
-                                </div>
-                            </div>
-                            React
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <BiLogoRedux />
-                                </div>
-                            </div>
-                            Redux
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <BiLogoPostgresql />
-                                </div>
-                            </div>
-                            PostgreSQL
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <BiLogoMongodb />
-                                </div>
-                            </div>
-                            MongoDB
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <SiAmazondynamodb />
-                                </div>
-                            </div>
-                            DynamoDB
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <SiGraphql />
-                                </div>
-                            </div>
-                            GraphQL
-                        </div>
-                    </MoveInWhenVisibleSkills>
-
-                    <MoveInWhenVisibleSkills>
-                        <div className='skill'>
-                            <div className='icon'>
-                                <div className='icon-circle'>
-                                    <FaNodeJs />
-                                </div>
-                            </div>
-                            Node.js
-                        </div>
-                    </MoveInWhenVisibleSkills>
+                        </MoveInWhenVisibleSkills>
+                    ))}
                 </div>
             </div>
         </div>
-    );
+    )
 }

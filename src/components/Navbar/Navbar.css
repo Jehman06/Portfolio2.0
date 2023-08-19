@@ -2,9 +2,11 @@
   background-color: #333;
   overflow: hidden;
   position: fixed;
+  display: flex;
   top: 0;
   width: 100%;
   z-index: 2;
+  align-items: center;
   position: relative;
   transition: top 0s ease-in-out;
   border-bottom: 5px #00b5c2 solid;
@@ -48,4 +50,44 @@
 
 .nav-item:hover {
   color: #e31b6d;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger .line.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger .line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .line.open:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 30px;
+    width: 100vw;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .navbar.fixed .hamburger {
+    color: white;
+  }
 }

@@ -1,72 +1,89 @@
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import React, { useState, useEffect } from "react";
 
 export default function Navbar() {
     const [navbarFixed, setNavbarFixed] = useState(false);
-    const [activeSection, setActiveSection] = useState('home'); // Default to 'home'
+    const [activeSection, setActiveSection] = useState('home');
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['home', 'about', 'projects'];
-
-            // Find the section that is currently in the viewport
-            const active = sections.find(section => {
-                const element = document.getElementById(section);
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    return rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
-                }
-                return false;
-            });
-
-            if (active && active !== activeSection) {
-                setActiveSection(active);
-            }
-
-            // Update the fixed navbar state
             const isFixed = window.scrollY >= window.innerHeight;
             if (isFixed !== navbarFixed) {
                 setNavbarFixed(isFixed);
             }
         };
 
+        const checkScreenSize = () => {
+            setIsSmallScreen(window.innerWidth <= 844);
+        };
+
         window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', checkScreenSize);
+
+        checkScreenSize();
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', checkScreenSize);
         };
-    }, [navbarFixed, activeSection]);
+    }, [navbarFixed]);
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
+            if (isSmallScreen) {
+                setIsMenuOpen(false); // Close the menu after clicking a link on small screens
+            }
         }
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (
         <div className={`navbar ${navbarFixed ? 'fixed' : ''}`}>
-            <button
-                className={`nav-item ${activeSection === 'home' ? 'active-nav-item' : ''}`}
-                onClick={() => scrollToSection("home")}
-            >
-                HOME
-            </button>
+            {isSmallScreen ? (
+                <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                </div>
+            ) : (
+                <>
+                    <div
+                        className={`nav-item ${activeSection === 'home' ? 'active-nav-item' : ''}`}
+                        onClick={() => scrollToSection('home')}
+                    >
+                        HOME
+                    </div>
 
-            <button
-                className={`nav-item ${activeSection === 'about' ? 'active-nav-item' : ''}`}
-                onClick={() => scrollToSection("about")}
-            >
-                ABOUT
-            </button>
+                    <div
+                        className={`nav-item ${activeSection === 'about' ? 'active-nav-item' : ''}`}
+                        onClick={() => scrollToSection('about')}
+                    >
+                        ABOUT
+                    </div>
 
-            <button
-                className={`nav-item ${activeSection === 'projects' ? 'active-nav-item' : ''}`}
-                onClick={() => scrollToSection("projects")}
-            >
-                PORTFOLIO
-            </button>
+                    <div
+                        className={`nav-item ${activeSection === 'projects' ? 'active-nav-item' : ''}`}
+                        onClick={() => scrollToSection('projects')}
+                    >
+                        PORTFOLIO
+                    </div>
+                </>
+            )}
 
+            {isSmallScreen && isMenuOpen && (
+                <div className="dropdown-menu">
+                    <button onClick={() => scrollToSection('home')}>HOME</button>
+                    <button onClick={() => scrollToSection('about')}>ABOUT</button>
+                    <button onClick={() => scrollToSection('projects')}>PORTFOLIO</button>
+                </div>
+            )}
         </div>
     );
 }
