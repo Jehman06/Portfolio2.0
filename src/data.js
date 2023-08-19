@@ -1,6 +1,6 @@
 import { FaReact, FaHtml5, FaCss3Alt, FaPython, FaNodeJs } from "react-icons/fa";
-import { BiLogoJavascript, BiLogoRedux, BiLogoPostgresql, BiLogoMongodb } from 'react-icons/bi';
-import { SiAmazondynamodb, SiGraphql } from 'react-icons/si';
+import { BiLogoRedux, BiLogoPostgresql, BiLogoMongodb } from 'react-icons/bi';
+import { SiAmazondynamodb, SiGraphql, SiTypescript, SiJavascript } from 'react-icons/si';
 
 export const skills = [
     {
@@ -13,7 +13,11 @@ export const skills = [
     },
     {
         name: 'JavaScript',
-        icon: <BiLogoJavascript />
+        icon: <SiJavascript />
+    },
+    {
+        name: 'TypeScript',
+        icon: <SiTypescript />
     },
     {
         name: 'Python',
