@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import "./About.css";
 import { skills } from "../../data";
 import { motion } from "framer-motion";
@@ -47,19 +47,19 @@ export default function About() {
                 <div className='bio'>
                     <MoveInWhenVisibleBio>
                         <p>
-                            I'm Jeremy Lehmann, a Software Developer based in San Diego, California. I developed a passion for programming when I watched my first Python tutorial video. Being able to write simple programs that worked was exciting. I decided to enroll in a bootcamp at San Diego State University, where I learned various languages and technologies, both front-end and back-end.
+                            I'm <span className='bio-color'>Jeremy Lehmann</span>, a <span className='bio-color'>Software Developer</span> based in San Diego, California. I developed a passion for <span className='bio-color'>programming</span> when I watched my first Python tutorial video. Being able to write simple programs that worked was exciting. I decided to enroll in a bootcamp at <span className='bio-color'>San Diego State University</span>, where I learned various languages and technologies, both front-end and back-end.
                         </p>
                     </MoveInWhenVisibleBio>
 
                     <MoveInWhenVisibleBio>
                         <p>
-                            I'm a tech enthusiast and really love learning new skills. I aspire to build software that makes the world a better place. I pick things up quickly and am not scared of hard work.
+                            I'm a tech enthusiast and really love <span className='bio-color'>learning new skills</span>. I aspire to build <span className='bio-color'>software</span> that makes the world a better place. I pick things up quickly and am not scared of <span className='bio-color'>hard work</span>.
                         </p>
                     </MoveInWhenVisibleBio>
 
                     <MoveInWhenVisibleBio>
                         <p>
-                            When I'm not working, I'm likely spending time with friends, at the park with my dog, or playing video games. I love roller coasters and plan a trip to the nearest Six Flags at least once a year!
+                            When I'm not working, I'm likely spending time with <span className='bio-color'>friends</span>, at the park with my <span className='bio-color'>dog</span>, or playing <span className='bio-color'>video games</span>. One of my favorite place on Earth is <span className='bio-color'>Six Flags</span>.
                         </p>
                     </MoveInWhenVisibleBio>
                 </div>

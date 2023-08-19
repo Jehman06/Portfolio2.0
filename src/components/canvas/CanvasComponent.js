@@ -121,7 +121,7 @@ export default function CanvasComponent() {
                 }}
             />
             <div className='text-content'>
-                <p>Hi, my name is <span className="red-text">Jeremy</span>.</p>
+                <p>Hello, my name is <span className="red-text">Jeremy</span>.</p>
                 <p>I'm a  <span className="red-text">Full-Stack Developer</span>.</p>
             </div>
         </div>
