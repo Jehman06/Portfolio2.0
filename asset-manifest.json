@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.600b64d7.css",
+    "main.js": "/static/js/main.09e0c978.js",
+    "static/js/787.146a3669.chunk.js": "/static/js/787.146a3669.chunk.js",
+    "static/media/urbanist-latin-400-normal.woff": "/static/media/urbanist-latin-400-normal.82b0b1af3df16c2d1f2d.woff",
+    "static/media/urbanist-latin-400-normal.woff2": "/static/media/urbanist-latin-400-normal.81dc263f00e7493f9216.woff2",
+    "static/media/urbanist-latin-ext-400-normal.woff": "/static/media/urbanist-latin-ext-400-normal.f0562b58c84b6f659a0c.woff",
+    "static/media/urbanist-latin-ext-400-normal.woff2": "/static/media/urbanist-latin-ext-400-normal.93ab504f4b92e5779696.woff2",
+    "index.html": "/index.html",
+    "main.600b64d7.css.map": "/static/css/main.600b64d7.css.map",
+    "main.09e0c978.js.map": "/static/js/main.09e0c978.js.map",
+    "787.146a3669.chunk.js.map": "/static/js/787.146a3669.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.600b64d7.css",
+    "static/js/main.09e0c978.js"
+  ]
+}
