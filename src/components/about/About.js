@@ -2,14 +2,11 @@ import React from "react";
 import "./About.css";
 import { skills } from "../../data";
 import { motion } from "framer-motion";
-import { FaReact, FaHtml5, FaCss3Alt, FaPython, FaNodeJs } from "react-icons/fa";
-import { BiLogoRedux, BiLogoPostgresql, BiLogoMongodb } from 'react-icons/bi';
-import { SiAmazondynamodb, SiGraphql, SiTypescript, SiJavascript } from 'react-icons/si';
 
 function MoveInWhenVisibleBio({ children }) {
     return (
         <motion.div
-            initial={{ x: -1000 }}
+            initial={{ x: -800 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.2 }}
@@ -22,7 +19,7 @@ function MoveInWhenVisibleBio({ children }) {
 function MoveInWhenVisibleSkills({ children }) {
     return (
         <motion.div
-            initial={{ x: -1000 }}
+            initial={{ x: -800 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
