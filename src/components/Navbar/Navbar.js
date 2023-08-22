@@ -1,9 +1,11 @@
 import './Navbar.css';
 import React, { useState, useEffect } from "react";
+import Hamburger from './Hamburger';
 
 export default function Navbar() {
     const [navbarFixed, setNavbarFixed] = useState(false);
-    const [activeSection, setActiveSection] = useState('home'); // Default to 'home'
+    const [activeSection, setActiveSection] = useState('home');
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -44,29 +46,39 @@ export default function Navbar() {
         }
     };
 
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen)
+        console.log(!hamburgerOpen)
+    };
+
     return (
         <div className={`navbar ${navbarFixed ? 'fixed' : ''}`}>
-            <button
-                className={`nav-item ${activeSection === 'home' ? 'active-nav-item' : ''}`}
-                onClick={() => scrollToSection("home")}
-            >
-                HOME
-            </button>
+            <div className='hamburger' onClick={toggleHamburger}>
+                <Hamburger />
+            </div>
 
-            <button
-                className={`nav-item ${activeSection === 'about' ? 'active-nav-item' : ''}`}
-                onClick={() => scrollToSection("about")}
-            >
-                ABOUT
-            </button>
+            <ul className={`nav-items ${hamburgerOpen ? 'open' : ''}`}>
+                <li
+                    className={`nav-item ${activeSection === 'home' ? 'active-nav-item' : ''}`}
+                    onClick={() => scrollToSection("home")}
+                >
+                    HOME
+                </li>
 
-            <button
-                className={`nav-item ${activeSection === 'projects' ? 'active-nav-item' : ''}`}
-                onClick={() => scrollToSection("projects")}
-            >
-                PORTFOLIO
-            </button>
+                <li
+                    className={`nav-item ${activeSection === 'about' ? 'active-nav-item' : ''}`}
+                    onClick={() => scrollToSection("about")}
+                >
+                    ABOUT
+                </li>
 
+                <li
+                    className={`nav-item ${activeSection === 'projects' ? 'active-nav-item' : ''}`}
+                    onClick={() => scrollToSection("projects")}
+                >
+                    PORTFOLIO
+                </li>
+            </ul>
         </div>
     );
 }

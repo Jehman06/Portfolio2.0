@@ -19,7 +19,7 @@
 
 .about {
     font-family: 'Urbanist';
-    font-size: 40pt;
+    font-size: 35pt;
     margin-bottom: 10px;
     color: #444649;
 }
@@ -33,7 +33,7 @@
 .about-content {
     margin-top: 30px;
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
 }
 
@@ -66,6 +66,7 @@
 
 .skills {
     margin-top: 70px;
+    margin-left : 30px;
     width: 47%;
     padding: 0 20px;
     display: grid;
@@ -106,18 +107,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width: 400) {
-    .about-container {
-        width: 100vw;
-    }
-
-    .about {
-    font-size: 20pt;
-    }
-
-    .skill {
-        font-size: 15pt;
-    }
 }
