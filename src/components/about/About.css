@@ -108,3 +108,13 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .about-container {
+        width: 100%;
+    }
+
+    .about {
+        font-size: 27pt;
+    }
+}
