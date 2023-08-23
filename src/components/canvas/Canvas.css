@@ -34,32 +34,43 @@
     z-index: -1;
 }
 
-@media (min-device-width: 1px) {
+@media (max-width: 640px) {
     .canvas-container {
         width: 100%;
     }
 
     .text-content {
-        font-size: 20pt;
+        font-size: 12.75pt;
+        /* display: -webkit-box; */
+        /* -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; */
     }
 }
 
-@media (min-device-width: 768px) {
+@media (min-width: 641px) and (max-width: 1007px) {
     .canvas-container {
         width: 100%;
     }
 
     .text-content {
-        font-size: 35pt;
+        font-size: 21pt;
+        /* display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden; */
     }
 }
 
-@media (min-device-width: 1200px) {
+@media (min-width: 1008px) {
     .canvas-container {
         width: 100%;
     }
 
     .text-content {
-        font-size: 45pt;
+        font-size: 32pt;
+        /* display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden; */
     }
 }
