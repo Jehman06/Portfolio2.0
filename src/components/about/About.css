@@ -39,7 +39,7 @@
 
 .bio {
     margin-top: 70px;
-    margin-left: 50px;
+    margin: 50px;
     width: 47%;
     padding: 0 20px;
     font-family: 'Urbanist';
@@ -66,7 +66,7 @@
 
 .skills {
     width: 47%;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 30px;
     padding: 0 20px;
     display: flex;
@@ -108,6 +108,7 @@
     align-items: center;
 }
 
+/* Small screens */
 @media (max-width: 640px) {
     .about-container {
         width: 100%;
@@ -124,15 +125,11 @@
 
     .bio,
     .skills {
+        box-sizing: border-box;
         width: 100%;
         text-align: center;
         padding: 20px;
         /* border: 1px solid black; */
-    }
-
-    .skills {
-        gap: 5px;
-        font-size: 15pt;
     }
 
     .bio {
@@ -140,21 +137,29 @@
         font-size: 15pt;
     }
 
+    /* .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15pt;
+    } */
+
     .icon {
         font-size: 20pt;
     }
 
-    .skill {
-        font-size: 15pt;
-        margin: 10px;
+    .icon-circle {
+        width: 37px;
+        height: 37px;
     }
 
-    .icon-circle {
-        width: 35px;
-        height: 35px;
+    .skill {
+        font-size: 15pt;
+        margin: 0;
     }
 }
 
+/* Medium screens */
 @media (min-width: 641px) and (max-width: 1007px) {
     .about-container {
         width: 100%;

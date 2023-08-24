@@ -17,6 +17,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
+    white-space: nowrap;
 }
 
 .text-content p {
@@ -40,7 +41,7 @@
     }
 
     .text-content {
-        font-size: 15pt;
+        font-size: 20pt;
         /* display: -webkit-box; */
         /* -webkit-line-clamp: 2;
         -webkit-box-orient: vertical; */
@@ -53,7 +54,7 @@
     }
 
     .text-content {
-        font-size: 21pt;
+        font-size: 25pt;
         /* display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
