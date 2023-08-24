@@ -9,7 +9,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['home', 'about', 'projects'];
+            const sections = ['home', 'about', 'projects', 'contact'];
 
             // Find the section that is currently in the viewport
             const active = sections.find(section => {

@@ -4,9 +4,9 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
   position: relative;
   transition: top 0s ease-in-out;
-  border-bottom: 4px solid #00b5c2;
 }
 
 .navbar.fixed {
