@@ -13,7 +13,7 @@ export default function App() {
       <div className='content'>
         <Navbar />
         <div className="content-container">
-          {/* <About id='about' /> */}
+          <About id='about' />
           {/* <Projects id='projects' />
           <Contact /> */}
           {/* Footer */}

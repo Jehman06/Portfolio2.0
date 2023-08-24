@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 function MoveInWhenVisibleBio({ children }) {
     return (
         <motion.div
-            initial={{ x: -800 }}
+            initial={{ x: -200 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.2 }}
+            transition={{ duration: 0.5 }}
         >
             {children}
         </motion.div>
@@ -19,7 +19,7 @@ function MoveInWhenVisibleBio({ children }) {
 function MoveInWhenVisibleSkills({ children }) {
     return (
         <motion.div
-            initial={{ x: -800 }}
+            initial={{ x: -200 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
@@ -31,7 +31,6 @@ function MoveInWhenVisibleSkills({ children }) {
 }
 
 export default function About() {
-
     return (
         <div id='about' className='about-container'>
             <MoveInWhenVisibleBio>

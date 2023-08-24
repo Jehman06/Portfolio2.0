@@ -65,16 +65,15 @@
 }
 
 .skills {
-    margin-top: 70px;
-    margin-left : 30px;
     width: 47%;
+    margin-top: 70px;
+    margin-left: 30px;
     padding: 0 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap to the next line */
     gap: 20px;
-    justify-items: center;
+    justify-content: center; /* Center the columns horizontally */
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 .skill {
@@ -109,12 +108,78 @@
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+    .about-container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .bio,
+    .skills {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        /* border: 1px solid black; */
+    }
+
+    .skills {
+        gap: 5px;
+        font-size: 15pt;
+    }
+
+    .bio {
+        text-align: justify;
+        font-size: 15pt;
+    }
+
+    .icon {
+        font-size: 20pt;
+    }
+
+    .skill {
+        font-size: 15pt;
+        margin: 10px;
+    }
+
+    .icon-circle {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1007px) {
     .about-container {
         width: 100%;
     }
 
-    .about {
-        font-size: 27pt;
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio,
+    .skills {
+        width: 100%; /* Take up the full width of the container */
+        padding: 20px;
+        text-align: center; /* Center the content */
+        font-size: 19pt;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        font-size: 20pt;
+    }
+
+    .skill {
+        font-size: 15pt;
     }
 }
