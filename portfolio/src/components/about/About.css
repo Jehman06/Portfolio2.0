@@ -1,0 +1,209 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 150px;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: scroll;
+    /* border: 1px solid black; */
+}
+
+.about {
+    font-family: 'Urbanist';
+    font-size: 35pt;
+    margin-bottom: 10px;
+    color: #444649;
+}
+
+.about-underline {
+    width: 100px;
+    height: 4px;
+    background-color: #444649;
+}
+
+.about-content {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bio {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 47%;
+    padding: 0 20px;
+    font-family: 'Urbanist';
+    font-size: 20pt;
+    text-align: justify;
+}
+
+.bio-color {
+    color: #00b5c2;
+    font-weight: bold;
+}
+
+.resume {
+    font-size: 22pt;
+    font-family: 'Urbanist';
+    color: white;
+    background-color: transparent;
+    background-color: #00b5c2;
+}
+
+.resume:hover {
+    background-color: #e31b6d;
+}
+
+.skills {
+    width: 47%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the container */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.skill {
+    font-size: 20pt;
+    font-family: 'Urbanist';
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+    /* border: 1px solid brown; */
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 25pt;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #00b5c2;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Small screens */
+@media (max-width: 640px) {
+    .about-container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .about {
+        font-size: 30pt;
+    }
+
+    .bio,
+    .skills {
+        text-align: center;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+        justify-content: center;
+        font-size: 15pt;
+        align-items: center;
+    }
+
+    .bio {
+        text-align: justify;
+        font-size: 15pt;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .icon {
+        font-size: 13pt;
+        margin-right: 5px;
+    }
+
+    .icon-circle {
+        width: 24px;
+        height: 24px;
+    }
+
+    .skill {
+        font-size: 12pt;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 641px) and (max-width: 1007px) {
+    .about-container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid blue; */
+    }
+
+    .bio {
+        width: 90%; /* Take up the full width of the container */
+        padding: 20px;
+        text-align: justify;
+        font-size: 19pt;
+        margin: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        /* border: 1px solid pink; */
+    }
+
+    .skills {
+        width: 90%; /* Take up the full width of the container */
+        text-align: justify;
+        font-size: 19pt;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 15pt;
+        margin-top: 10px;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .icon {
+        font-size: 24pt;
+    }
+
+    .skill {
+        font-size: 15pt;
+        align-items: center;
+    }
+}
