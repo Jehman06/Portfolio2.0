@@ -58,15 +58,32 @@ export const projects = [
         name: 'HungryHub',
         images: [process.env.PUBLIC_URL + '/hungryhub.png', process.env.PUBLIC_URL + '/hungryhub.png', process.env.PUBLIC_URL + '/hungryhub.png',],
         type: 'Food Delivery',
-        description: 'HungryHub is an app helping users find restaurants and request a delivery. React, AWS Amplify, AWS Cognito, DynamoDB, Material UI. This app does not facilitate any transaction and no food will be delivered. Demo purposes only.',
+        description: 'HungryHub is an app helping users find restaurants and get their food delivered. Built with React, AWS Amplify, AWS Cognito, DynamoDB and Material UI.',
         url: 'https://www.hungryhub.us',
+        github: 'https://github.com/Jehman06/HungryHub.git'
     },
     {
         name: 'Fit by Me',
-        images: [process.env.PUBLIC_URL + '/Fit-by-Me.png', process.env.PUBLIC_URL + '/Fit-by-Me.png',],
+        images: [process.env.PUBLIC_URL + '/Fit-by-Me.png',],
         type: 'MERN',
-        description: 'Fit by Me is a fitness and diet tracker. Find thousands of exercises and recipes and track them in one place. React, Node, MongoDB, Express, Material UI',
-        url: 'https://www.hungryhub.us',
-        image2: process.env.PUBLIC_URL + '/hungryhub.png',
+        description: 'Fit by Me is a fitness and diet tracker. Find thousands of exercises and recipes and track them in one place. Built with React, Node, MongoDB, Express and Material UI.',
+        url: 'https://github.com/sswift1995/myfitness_app.git',
+        github: 'https://github.com/sswift1995/myfitness_app.git'
+    },
+    {
+        name: 'Fit by Me',
+        images: [process.env.PUBLIC_URL + '/Fit-by-Me.png',],
+        type: 'MERN',
+        description: 'Fit by Me is a fitness and diet tracker. Find thousands of exercises and recipes and track them in one place. Built with React, Node, MongoDB, Express and Material UI.',
+        url: 'https://github.com/sswift1995/myfitness_app.git',
+        github: 'https://github.com/sswift1995/myfitness_app.git'
+    },
+    {
+        name: 'Fit by Me',
+        images: [process.env.PUBLIC_URL + '/Fit-by-Me.png',],
+        type: 'MERN',
+        description: 'Fit by Me is a fitness and diet tracker. Find thousands of exercises and recipes and track them in one place. Built with React, Node, MongoDB, Express and Material UI.',
+        url: 'https://github.com/sswift1995/myfitness_app.git',
+        github: 'https://github.com/sswift1995/myfitness_app.git'
     },
 ]
