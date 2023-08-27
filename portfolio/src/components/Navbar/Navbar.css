@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #333;
+  background-color: #37393b;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -7,6 +7,7 @@
   z-index: 2;
   position: relative;
   transition: top 0s ease-in-out;
+  border-bottom: 3px solid #00b5c2;
 }
 
 .navbar.fixed {

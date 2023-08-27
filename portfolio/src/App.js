@@ -3,8 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import About from './components/about/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/contact/Contact';
-
-import { useMediaQuery } from 'react-responsive';
+import Footer from './components/footer/Footer';
 
 export default function App() {
   return (
@@ -15,8 +14,9 @@ export default function App() {
         <div className="content-container">
           <About id='about' />
           <Projects id='projects' />
-          {/* <Contact />  */}
+          <Contact />
         </div>
+        <Footer />
       </div>
     </div>
   );

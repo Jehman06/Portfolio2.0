@@ -77,6 +77,13 @@ export default function Navbar() {
                 >
                     PORTFOLIO
                 </li>
+
+                <li
+                    className={`nav-item ${activeSection === 'contact' ? 'active-nav-item' : ''}`}
+                    onClick={() => scrollToSection("contact")}
+                >
+                    CONTACT
+                </li>
             </ul>
         </div>
     );

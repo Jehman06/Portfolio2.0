@@ -2,8 +2,104 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #333;
     position: relative;
     padding-top: 90px;
-    height: 110vh;
+    padding-bottom: 150px;
+    font-family: 'Urbanist';
+    overflow: hidden; /* Hide overflow to hide the extra part of the shape */
+    background-color: rgba(37, 41, 52, 255);
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: scroll;
+}
+
+.contact-title {
+    font-family: 'Urbanist';
+    font-size: 35pt;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact-underline {
+    width: 100px;
+    height: 4px;
+    background-color: white;
+}
+
+.contact-content-p {
+    color: #00b5c2;
+    padding: 20px;
+    font-size: 15pt;
+}
+
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-name,
+.form-email,
+.form-message {
+    background: #37393b;
+    border: 0;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    outline: none;
+    padding: 10px 25px;
+    width: 100%;
+    font-family: 'Urbanist';
+}
+
+.form-message {
+    color: white;
+    height: 200px;
+    resize: none;
+}
+
+.message-button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, border 0.3s ease;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.message-button:hover {
+    background-color: #00b5c2;
+    border: none;
+}
+
+.contact-message {
+    color: #00b5c2;
+    padding: 20px;
+    font-size: 15pt;
+}
+
+.contact-submit {
+    text-align: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #333 inset !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
 }

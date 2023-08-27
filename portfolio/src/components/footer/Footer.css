@@ -1,0 +1,103 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    font-family: 'Urbanist';
+    background-color: #37393b;
+    z-index: 1;
+}
+
+.links > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(37, 41, 52, 255);
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    z-index: 2;
+}
+
+.links > a:hover {
+    background-color: #00b5c2;
+}
+
+.social-icon {
+    z-index: 0;
+}
+
+.social-icon.animate {
+    animation: toBottomFromTop 0.3s linear forwards;
+    -webkit-font-smoothing: antialiased;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link {
+    flex: 1;
+    margin: 0 10px; /* Add space between icons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 10pt;
+    margin-top: 25px;
+    margin-bottom: 0;
+    color: #a9abae;
+}
+
+.copyright-color {
+    color: #e31b6d;
+}
+
+/* Scroll-up button styles */
+.scroll-up {
+    padding: 10px;
+    background-color:  #b51657;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; /* Center horizontally */
+    position: absolute; /* Position at the center */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    bottom: 0; /* Stick to the bottom */
+    margin-bottom: 176px; /* Adjust as needed */
+    z-index: 1; /* Ensure the button is on top */
+}
+
+.scroll-up-icon {
+    color: white;
+}
+
+.scroll-up:hover {
+    background-color: #e31b6d;
+}
+
+@keyframes toBottomFromTop {
+    0% {
+        transform: translateY(0%);
+    }
+    49% {
+        transform: translateY(65%);
+    }
+    50% {
+        transform: translateY(-65%);
+    }
+    51% {
+        opacity: 1;
+    }
+}

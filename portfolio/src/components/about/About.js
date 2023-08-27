@@ -43,39 +43,23 @@ export default function About() {
             <div className='about-content'>
                 <div className='bio'>
                     <MoveInWhenVisibleBio>
-                        <p>
-                            I'm <span className='bio-color'>Jeremy Lehmann</span>, a <span className='bio-color'>Software Developer</span> based in San Diego, California. I developed a passion for <span className='bio-color'>programming</span> when I watched my first Python tutorial video. Being able to write simple programs that worked was exciting. I decided to enroll in a bootcamp at <span className='bio-color'>San Diego State University</span>, where I learned various languages and technologies, both front-end and back-end.
-                        </p>
+                        <p>I'm a passionate <span className='bio-color'>Full-Stack Developer</span> based in San Diego, California. I have experience <span className='bio-color'>building web applications</span> using a variety of technologies, including:</p>
                     </MoveInWhenVisibleBio>
+                    <div className='skills-container'>
+                        {skills.map((skill) => (
+                            <div className='skill-item' key={skill.name}>
+                                <MoveInWhenVisibleBio>
+                                    <img className='skill-icon' src={skill.icon} alt={skill.name} />
+                                </MoveInWhenVisibleBio>
 
-                    <MoveInWhenVisibleBio>
-                        <p>
-                            I'm a tech enthusiast and really love <span className='bio-color'>learning new skills</span>. I aspire to build <span className='bio-color'>software</span> that makes the world a better place. I pick things up quickly and am not scared of <span className='bio-color'>hard work</span>.
-                        </p>
-                    </MoveInWhenVisibleBio>
-
-                    <MoveInWhenVisibleBio>
-                        <p>
-                            When I'm not working, I'm likely spending time with <span className='bio-color'>friends</span>, at the park with my <span className='bio-color'>dog</span>, or playing <span className='bio-color'>video games</span>. One of my favorite place on Earth is <span className='bio-color'>Six Flags</span>.
-                        </p>
-                    </MoveInWhenVisibleBio>
-                </div>
-
-                <div className='skills'>
-                    {skills.map((skill) => (
-                        <MoveInWhenVisibleSkills key={skill.name}>
-                            <div className='skill'>
-                                <div className='icon'>
-                                    <div className='icon-circle'>
-                                        {skill.icon}
-                                    </div>
-                                </div>
-                                {skill.name}
+                                <MoveInWhenVisibleBio>
+                                    <p className='skill-name'>{skill.name}</p>
+                                </MoveInWhenVisibleBio>
                             </div>
-                        </MoveInWhenVisibleSkills>
-                    ))}
+                        ))}
+                    </div>
+                    <p>I enjoy creating <span className='bio-color'>intuitive</span> and visually <span className='bio-color'>appealing UI</span> using <span className='bio-color'>React</span>. Crafting seamless <span className='bio-color'>user experiences</span> that leave a <span className='bio-color'>lasting impression</span> is my goal. My proficiency extends to architecting <span className='bio-color'>powerful</span> server-side systems. I have experience developing <span className='bio-color'>REST</span> and <span className='bio-color'>GraphQL</span> APIs. I'm knowledgeable about both <span className='bio-color'>SQL</span> and <span className='bio-color'>NoSQL</span> databases, employing technologies like <span className='bio-color'>PostgreSQL</span>, <span className='bio-color'>MongoDB</span> and <span className='bio-color'>DynamoDB</span> to unsure <span className='bio-color'>data integrity</span> and <span className='bio-color'>efficient querying</span>.</p>
                 </div>
-
             </div>
         </div>
     )

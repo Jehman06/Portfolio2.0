@@ -1,0 +1,19 @@
+/* Adjustments to center content and space components */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1; /* Allow content to grow and fill the remaining height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-container {
+    flex-grow: 1; /* Allow content-container to fill remaining height */
+    display: flex;
+    flex-direction: column;
+}
