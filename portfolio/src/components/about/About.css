@@ -123,12 +123,32 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 10px;
         justify-content: center;
     }
 
-    .about {
-        font-size: 30pt;
+    .bio {
+        font-size: 13pt;
+        padding-bottom: 10px;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .skill-item {
+        margin: 5px;
+    }
+
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-name {
+        font-size: 12pt;
     }
 }
 

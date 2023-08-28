@@ -19,11 +19,10 @@ function MoveInWhenVisibleBio({ children }) {
 function MoveInWhenVisibleSkills({ children }) {
     return (
         <motion.div
-            initial={{ x: -190 }}
+            initial={{ x: -157 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
         >
             {children}
         </motion.div>
@@ -48,13 +47,13 @@ export default function About() {
                     <div className='skills-container'>
                         {skills.map((skill) => (
                             <div className='skill-item' key={skill.name}>
-                                <MoveInWhenVisibleBio>
+                                <MoveInWhenVisibleSkills>
                                     <img className='skill-icon' src={skill.icon} alt={skill.name} />
-                                </MoveInWhenVisibleBio>
+                                </MoveInWhenVisibleSkills>
 
-                                <MoveInWhenVisibleBio>
+                                <MoveInWhenVisibleSkills>
                                     <p className='skill-name'>{skill.name}</p>
-                                </MoveInWhenVisibleBio>
+                                </MoveInWhenVisibleSkills>
                             </div>
                         ))}
                     </div>
