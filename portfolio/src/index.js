@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import "@fontsource/urbanist";
+import "@fontsource/inter";
 
 const root = createRoot(document.getElementById('root'));
 root.render(

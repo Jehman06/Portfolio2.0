@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 90px;
+    padding-top: 120px;
     padding-bottom: 150px;
     font-family: 'Urbanist';
     overflow: hidden; /* Hide overflow to hide the extra part of the shape */
@@ -19,7 +19,7 @@
 }
 
 .contact-title {
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 35pt;
     margin-bottom: 10px;
     color: white;

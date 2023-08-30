@@ -47,7 +47,7 @@ export default function About() {
                     </MoveInWhenVisibleBio>
 
                     <MoveInWhenVisibleBio>
-                        <p>I found a passion in programming when I watched my first Python tutorial. Being able to write code and make small programs felt like an accomplishment. Then, I completed a Software Development Bootcamp with San Diego State University, which allowed me to gain valuable skills. I'm a fast learner and love learning new things! I'm currently learning Java.</p>
+                        <p>I found my passion for programming through a combination of curiosity and a desire to solve real-world problems. This journey led me to successfully complete a Software Development Bootcamp with San Diego State University, where I acquired valuable skills. I'm a fast learner and love learning new things! I recently started learning a new language, Java.</p>
                     </MoveInWhenVisibleBio>
 
                     <MoveInWhenVisibleBio>
@@ -67,3 +67,4 @@ export default function About() {
         </div>
     )
 }
+

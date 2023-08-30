@@ -5,7 +5,7 @@
     align-items: center;
     background-color: #ebebeb;
     position: relative;
-    padding-top: 90px;
+    padding-top: 120px;
     padding-bottom: 150px;
     width: 100%;
 }
@@ -19,7 +19,7 @@
 }
 
 .about {
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 35pt;
     margin-bottom: 10px;
     color: #444649;
@@ -30,7 +30,7 @@
     height: 4px;
     background-color: #444649;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .about-content {
@@ -38,7 +38,7 @@
 }
 
 .bio {
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     margin: 20px;
     font-size: 16pt;
     display: flex;
@@ -60,7 +60,7 @@
 }
 
 .skills {
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 13pt;
     display: flex;
     flex-direction: row;

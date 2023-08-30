@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fontsource/inter": "^5.0.8",
     "@fontsource/urbanist": "^5.0.8",
     "@formspree/react": "^2.5.1",
     "@mui/icons-material": "^5.14.6",
