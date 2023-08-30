@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio2.0/static/css/main.96af14b6.css",
-    "main.js": "/Portfolio2.0/static/js/main.786630f8.js",
+    "main.css": "/Portfolio2.0/static/css/main.5acc8d26.css",
+    "main.js": "/Portfolio2.0/static/js/main.2962506d.js",
     "static/js/787.146a3669.chunk.js": "/Portfolio2.0/static/js/787.146a3669.chunk.js",
     "static/media/urbanist-latin-400-normal.woff": "/Portfolio2.0/static/media/urbanist-latin-400-normal.82b0b1af3df16c2d1f2d.woff",
     "static/media/urbanist-latin-400-normal.woff2": "/Portfolio2.0/static/media/urbanist-latin-400-normal.81dc263f00e7493f9216.woff2",
     "static/media/urbanist-latin-ext-400-normal.woff": "/Portfolio2.0/static/media/urbanist-latin-ext-400-normal.f0562b58c84b6f659a0c.woff",
     "static/media/urbanist-latin-ext-400-normal.woff2": "/Portfolio2.0/static/media/urbanist-latin-ext-400-normal.93ab504f4b92e5779696.woff2",
     "index.html": "/Portfolio2.0/index.html",
-    "main.96af14b6.css.map": "/Portfolio2.0/static/css/main.96af14b6.css.map",
-    "main.786630f8.js.map": "/Portfolio2.0/static/js/main.786630f8.js.map",
+    "main.5acc8d26.css.map": "/Portfolio2.0/static/css/main.5acc8d26.css.map",
+    "main.2962506d.js.map": "/Portfolio2.0/static/js/main.2962506d.js.map",
     "787.146a3669.chunk.js.map": "/Portfolio2.0/static/js/787.146a3669.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96af14b6.css",
-    "static/js/main.786630f8.js"
+    "static/css/main.5acc8d26.css",
+    "static/js/main.2962506d.js"
   ]
 }
