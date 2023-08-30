@@ -31,6 +31,10 @@
     background-color: white;
 }
 
+.contact-content {
+    margin-top: 40px;
+}
+
 .contact-content-p {
     color: #00b5c2;
     padding: 20px;
@@ -38,10 +42,10 @@
 }
 
 .form {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-
+    margin: 20px;
+    margin-bottom: 0;
 }
 
 .form-name,

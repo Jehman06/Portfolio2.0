@@ -19,14 +19,14 @@ function MoveInWhenVisible({ children }) {
 function PopInWhenVisible({ children }) {
     return (
         <motion.div
-            initial={{ scale: 0, rotate: -180 }}
-            whileInView={{ scale: 1, rotate: 0 }}
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{
                 type: "spring",
                 stiffness: 200,
                 damping: 30,
-                duration: 1.5
+                duration: 3,
             }}
         >
             {children}

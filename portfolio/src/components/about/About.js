@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function MoveInWhenVisibleBio({ children }) {
     return (
         <motion.div
-            initial={{ x: -250 }}
+            initial={{ x: -230 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
@@ -19,7 +19,7 @@ function MoveInWhenVisibleBio({ children }) {
 function MoveInWhenVisibleSkills({ children }) {
     return (
         <motion.div
-            initial={{ x: -157 }}
+            initial={{ x: 129 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
@@ -32,32 +32,36 @@ function MoveInWhenVisibleSkills({ children }) {
 export default function About() {
     return (
         <div id='about' className='about-container'>
-            <MoveInWhenVisibleBio>
-                <div className='about-title'>
+
+            <div className='about-title'>
+                <MoveInWhenVisibleBio>
                     <div className='about'>ABOUT</div>
                     <div className='about-underline'></div>
-                </div>
-            </MoveInWhenVisibleBio>
+                </MoveInWhenVisibleBio>
+            </div>
 
             <div className='about-content'>
                 <div className='bio'>
                     <MoveInWhenVisibleBio>
-                        <p>I'm a passionate <span className='bio-color'>Full-Stack Developer</span> based in San Diego, California. I have experience <span className='bio-color'>building web applications</span> using a variety of technologies, including:</p>
+                        <p>I'm a passionate <span className='bio-color'>Full-Stack Developer</span> based in <span className='bio-color'>San Diego, California</span>. I enjoy building web applications that are dynamic, responsive, and user-friendly.</p>
                     </MoveInWhenVisibleBio>
-                    <div className='skills-container'>
-                        {skills.map((skill) => (
-                            <div className='skill-item' key={skill.name}>
-                                <MoveInWhenVisibleSkills>
-                                    <img className='skill-icon' src={skill.icon} alt={skill.name} />
-                                </MoveInWhenVisibleSkills>
 
-                                <MoveInWhenVisibleSkills>
-                                    <p className='skill-name'>{skill.name}</p>
-                                </MoveInWhenVisibleSkills>
+                    <MoveInWhenVisibleBio>
+                        <p>I found a passion in programming when I watched my first Python tutorial. Being able to write code and make small programs felt like an accomplishment. Then, I completed a Software Development Bootcamp with San Diego State University, which allowed me to gain valuable skills. I'm a fast learner and love learning new things! I'm currently learning Java.</p>
+                    </MoveInWhenVisibleBio>
+
+                    <MoveInWhenVisibleBio>
+                        <p>When I'm not working, I love exploring my city with my dog Bentley, trying new restaurants, going to Six Flags and playing video games. Whether I look like a good fit for your team, or you have any questions, I'm happy to chat!</p>
+                    </MoveInWhenVisibleBio>
+                </div>
+                <div className='skills'>
+                    {skills.map((skill) => (
+                        <MoveInWhenVisibleSkills>
+                            <div className='skill'>
+                                <p><b>{skill}</b></p>
                             </div>
-                        ))}
-                    </div>
-                    <p>I enjoy creating <span className='bio-color'>intuitive</span> and visually <span className='bio-color'>appealing UI</span> using <span className='bio-color'>React</span>. Crafting seamless <span className='bio-color'>user experiences</span> that leave a <span className='bio-color'>lasting impression</span> is my goal. My proficiency extends to architecting <span className='bio-color'>powerful</span> server-side systems. I have experience developing <span className='bio-color'>REST</span> and <span className='bio-color'>GraphQL</span> APIs. I'm knowledgeable about both <span className='bio-color'>SQL</span> and <span className='bio-color'>NoSQL</span> databases, employing technologies like <span className='bio-color'>PostgreSQL</span>, <span className='bio-color'>MongoDB</span> and <span className='bio-color'>DynamoDB</span> to unsure <span className='bio-color'>data integrity</span> and <span className='bio-color'>efficient querying</span>.</p>
+                        </MoveInWhenVisibleSkills>
+                    ))}
                 </div>
             </div>
         </div>
