@@ -1,18 +1,18 @@
 .navbar {
   background-color: #37393b;
   overflow: hidden;
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 2;
   position: relative;
-  transition: top 0s ease-in-out;
+  /* transition: top 1s ease-in-out; */
   border-bottom: 3px solid #00b5c2;
+  transform: none;
 }
 
 .navbar.fixed {
   position: fixed;
   top: 0;
+  transition: none;
 }
 
 .nav-items {
@@ -21,6 +21,7 @@
   width: 100%;
   text-align: center;
   z-index: 10;
+  transition: none;
 }
 
 .nav-item {

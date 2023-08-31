@@ -1,5 +1,6 @@
 import './Navbar.css';
 import React, { useState, useEffect } from "react";
+import throttle from 'lodash.throttle';
 import Hamburger from './Hamburger';
 
 export default function Navbar() {
@@ -8,7 +9,7 @@ export default function Navbar() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
+        const handleScroll = throttle(() => {
             const sections = ['home', 'about', 'projects', 'contact'];
 
             // Find the section that is currently in the viewport
@@ -30,7 +31,7 @@ export default function Navbar() {
             if (isFixed !== navbarFixed) {
                 setNavbarFixed(isFixed);
             }
-        };
+        }, 100);
 
         window.addEventListener('scroll', handleScroll);
 
