@@ -35,7 +35,6 @@ function PopInWhenVisible({ children }) {
 }
 
 export default function Contact() {
-
     const [state, handleSubmit] = useForm("xwkjgkje");
 
     if (state.succeeded) {
