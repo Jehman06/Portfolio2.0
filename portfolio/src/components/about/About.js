@@ -61,14 +61,16 @@ export default function About() {
                     </MoveInWhenVisibleBio>
 
                     <MoveInWhenVisibleBio>
-                        <p>I found my passion for programming through a combination of curiosity and a desire to solve real-world problems. This journey led me to successfully complete a Software Development Bootcamp with San Diego State University, where I acquired valuable skills. I'm a fast learner and love learning new things! I recently started learning a new language, Java.</p>
+                        <p>I found my passion for programming through a combination of curiosity and a desire to solve real-world problems. This journey led me to successfully complete a Software Development Bootcamp with San Diego State University, where I acquired valuable skills. I'm a fast learner and love learning new things! I recently started learning Java.</p>
                     </MoveInWhenVisibleBio>
 
                     <MoveInWhenVisibleBio>
                         <p>When I'm not working, I love exploring my city with my dog Bentley, trying new restaurants, going to Six Flags and playing video games. Whether I look like a good fit for your team, or you have any questions, I'm happy to chat!</p>
                     </MoveInWhenVisibleBio>
                     <MoveInWhenVisibleBio>
-                        <button className='resume' onClick={downloadResume}>Download My Resume</button>
+                        <div className='resume' onClick={downloadResume}>
+                            <p><b>Download My Resume</b></p>
+                        </div>
                     </MoveInWhenVisibleBio>
                 </div>
                 <div className='skills'>
