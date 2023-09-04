@@ -59,6 +59,7 @@ export default function Projects() {
                     </MoveInWhenVisibleTitle>
                 ))}
             </div>
+
             <div className={`modal ${isModalOpen ? 'open' : ''}`}>
                 {selectedProject && (
                     <div className='modal-content'>

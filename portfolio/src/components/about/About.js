@@ -14,7 +14,7 @@ function MoveInWhenVisibleBio({ children }) {
             {children}
         </motion.div>
     );
-}
+};
 
 function MoveInWhenVisibleSkills({ children }) {
     return (
@@ -27,11 +27,23 @@ function MoveInWhenVisibleSkills({ children }) {
             {children}
         </motion.div>
     )
-}
+};
+
+function downloadResume() {
+    const resume = process.env.PUBLIC_URL + "/resume.pdf";
+
+    const link = document.createElement('a');
+    link.href = resume;
+
+    link.download = 'Jeremy-Lehmann-Resume.pdf';
+
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+};
 
 export default function About() {
-
-
     return (
         <div id='about' className='about-container'>
 
@@ -54,6 +66,9 @@ export default function About() {
 
                     <MoveInWhenVisibleBio>
                         <p>When I'm not working, I love exploring my city with my dog Bentley, trying new restaurants, going to Six Flags and playing video games. Whether I look like a good fit for your team, or you have any questions, I'm happy to chat!</p>
+                    </MoveInWhenVisibleBio>
+                    <MoveInWhenVisibleBio>
+                        <button className='resume' onClick={downloadResume}>Download My Resume</button>
                     </MoveInWhenVisibleBio>
                 </div>
                 <div className='skills'>

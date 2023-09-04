@@ -239,6 +239,10 @@ project-image {
         overflow: hidden;
     }
 
+    .projects {
+        margin-bottom: 30px;
+    }
+
     .project {
         margin-top: 1px;
         margin-bottom: 1px;

@@ -75,6 +75,7 @@ export default function Contact() {
                         <input
                             type='text'
                             id='name'
+                            name='name'
                             className='form-name'
                             placeholder='Name'
                         />
@@ -87,6 +88,7 @@ export default function Contact() {
                         <input
                             type='text'
                             id='email'
+                            name='email'
                             className='form-email'
                             placeholder='Email'
                         />
