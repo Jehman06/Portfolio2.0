@@ -155,6 +155,19 @@
     height: auto;
 }
 
+.modal-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust the height as needed */
+}
+
+.project-image {
+    width: 100%; /* Make all images the same width */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; /* Ensure images don't exceed their natural size */
+}
+
 .modal-text {
     position: relative;
 }
@@ -162,11 +175,6 @@
 .modal-project-name {
     font-size: 20pt;
     margin-bottom: 0;
-}
-
-project-image {
-    width: 100%;
-    height: auto;
 }
 
 .prev-button,

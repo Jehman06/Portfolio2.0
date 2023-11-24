@@ -66,7 +66,7 @@ export default function Projects() {
                         <AliceCarousel
                             className='modal-images'
                             autoPlay
-                            autoPlayInterval='3000'
+                            autoPlayInterval='5000'
                             autoPlayStrategy='none'
                             renderPrevButton={() => (
                                 <div className='prev-button'>
