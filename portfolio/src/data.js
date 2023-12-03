@@ -46,7 +46,7 @@ export const projects = [
             process.env.PUBLIC_URL + '/formify-doc.png',
             process.env.PUBLIC_URL + '/formify-sub.png'
         ],
-        type: 'API',
+        type: 'REST API',
         description: "Formify is a backend API for HTML and Javascript forms. It's a simple way to embed custom contact us forms, without having to build a backend. Use your frontend code, submit to Formify and view your form submissions on the app.",
         url: 'https://www.formifyapp.com',
         github: 'https://github.com/Jehman06/form-api.git'
