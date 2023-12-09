@@ -198,3 +198,11 @@
         width: 199.9px;
     }
 }
+
+/* Large screens */
+@media (min-width: 1008px) {
+    .resume {
+        font-size: 12pt;
+        width: 199.9px;
+    }
+}
