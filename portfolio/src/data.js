@@ -52,8 +52,9 @@ export const projects = [
         github: 'https://github.com/Jehman06/form-api.git'
     },
     {
-        name: 'Python JSON parser, OOP',
+        name: 'Python JSON parser',
         images: process.env.PUBLIC_URL + '/python.png',
+        type: "Python, Object-Oriented",
         description: "This Python JSON parser is a lightweight tool for parsing JSON strings into Python objects. It supports parsing JSON objects, arrays, strings, numbers, booleans, and null values.",
         url: 'https://github.com/Jehman06/python-json-parser.git',
         github: 'https://github.com/Jehman06/python-json-parser.git'
