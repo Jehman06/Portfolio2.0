@@ -53,7 +53,7 @@ export const projects = [
     },
     {
         name: 'Python JSON parser',
-        images: process.env.PUBLIC_URL + '/python.png',
+        images: [process.env.PUBLIC_URL + '/python.png'],
         type: "Python, Object-Oriented",
         description: "This Python JSON parser is a lightweight tool for parsing JSON strings into Python objects. It supports parsing JSON objects, arrays, strings, numbers, booleans, and null values.",
         url: 'https://github.com/Jehman06/python-json-parser.git',
