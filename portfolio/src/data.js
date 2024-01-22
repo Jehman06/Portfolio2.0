@@ -50,5 +50,12 @@ export const projects = [
         description: "Formify is a backend API for HTML and Javascript forms. It's a simple way to embed custom contact us forms, without having to build a backend. Use your frontend code, submit to Formify and view your form submissions on the app.",
         url: 'https://www.formifyapp.com',
         github: 'https://github.com/Jehman06/form-api.git'
+    },
+    {
+        name: 'Python JSON parser, OOP',
+        images: process.env.PUBLIC_URL + '/python.png',
+        description: "This Python JSON parser is a lightweight tool for parsing JSON strings into Python objects. It supports parsing JSON objects, arrays, strings, numbers, booleans, and null values.",
+        url: 'https://github.com/Jehman06/python-json-parser.git',
+        github: 'https://github.com/Jehman06/python-json-parser.git'
     }
 ]
