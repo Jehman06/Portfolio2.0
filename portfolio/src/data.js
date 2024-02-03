@@ -66,5 +66,5 @@ export const projects = [
         description: "DigiBuddy is a versatile Discord bot designed to assist with various daily tasks and add fun elements to your server.",
         url: 'https://github.com/Jehman06/discord-bot.git',
         github: 'https://github.com/Jehman06/discord-bot.git'
-    }
+    },
 ]
