@@ -58,5 +58,13 @@ export const projects = [
         description: "This Python JSON parser is a lightweight tool for parsing JSON strings into Python objects. It supports parsing JSON objects, arrays, strings, numbers, booleans, and null values.",
         url: 'https://github.com/Jehman06/python-json-parser.git',
         github: 'https://github.com/Jehman06/python-json-parser.git'
+    },
+    {
+        name: 'DigiBuddy',
+        images: [process.env.PUBLIC_URL + '/discord.png'],
+        type: "Discord Bot, Python Object-Oriented",
+        description: "DigiBuddy is a versatile Discord bot designed to assist with various daily tasks and add fun elements to your server.",
+        url: 'https://github.com/Jehman06/discord-bot.git',
+        github: 'https://github.com/Jehman06/discord-bot.git'
     }
 ]
