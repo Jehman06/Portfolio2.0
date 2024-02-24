@@ -62,11 +62,11 @@ export default function About() {
                     </MoveInWhenVisibleBio>
 
                     <MoveInWhenVisibleBio>
-                        <p>I found my passion for programming through a combination of curiosity and a desire to solve real-world problems. This journey led me to successfully complete a Software Development Bootcamp with San Diego State University, where I acquired valuable skills. I'm a fast learner and love learning new things! I recently started learning Java.</p>
+                        <p>I'm passionate about software development because it provides endless opportunities for learning and growth. Every project, challenge, or problem I encounter presents an opportunity to expand my knowledge and skills. The field is constantly evolving, which keeps me engaged and excited to explore new technologies, techniques, and best practices. Ultimately, the journey of continuous learning is what drives my passion for software development.</p>
                     </MoveInWhenVisibleBio>
 
                     <MoveInWhenVisibleBio>
-                        <p>When I'm not working, I love exploring my city with my dog Bentley, trying new restaurants, going to Six Flags and playing video games. Whether I look like a good fit for your team, or you have any questions, I'm happy to chat!</p>
+                        <p>When I'm not working, I love exploring the world with my dog Bentley, trying new restaurants, going to Six Flags and playing video games. I am looking for a full-time opportunity as a developer, so if my profile interests you, feel free to reach out!</p>
                     </MoveInWhenVisibleBio>
                     <MoveInWhenVisibleBio>
                         <div className='resume' onClick={downloadResume}>

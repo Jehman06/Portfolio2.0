@@ -1,21 +1,22 @@
 export const skills = [
+    'JavaScript',
+    'TypeScript',
+    'Python',
     'HTML',
     'CSS',
-    'JavaScript',
-    'Python',
     'React',
     'Redux',
     'Flask',
-    'Node.js',
+    'Django',
     'PostgreSQL',
     'MongoDB',
-    'REST API',
-    'GraphQL API',
-    'Express',
-    'Material UI',
-    'Responsive Design',
+    'REST',
+    'GraphQL',
+    'JSON',
     'Bootstrap',
-    'TypeScript',
+    'Tailwind',
+    'MaterialUI'
+
 ]
 
 export const projects = [
