@@ -16,6 +16,7 @@ function MoveInWhenVisibleBio({ children }) {
     );
 };
 
+
 function MoveInWhenVisibleSkills({ children }) {
     return (
         <motion.div
