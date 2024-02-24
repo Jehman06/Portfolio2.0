@@ -94,6 +94,13 @@
     line-height: 0,2;
 }
 
+.reachout {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #00b5c2;
+    cursor: pointer;
+}
+
 .resume {
     display: flex;
     align-items: center;

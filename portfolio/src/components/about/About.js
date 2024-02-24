@@ -16,6 +16,12 @@ function MoveInWhenVisibleBio({ children }) {
     );
 };
 
+const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
 
 function MoveInWhenVisibleSkills({ children }) {
     return (
@@ -66,7 +72,7 @@ export default function About() {
                     </MoveInWhenVisibleBio>
 
                     <MoveInWhenVisibleBio>
-                        <p>When I'm not working, I love exploring the world with my dog Bentley, trying new restaurants, going to Six Flags and playing video games. I am looking for a full-time opportunity as a developer, so if my profile interests you, feel free to reach out!</p>
+                        <p>When I'm not working, I love exploring the world with my dog Bentley, trying new restaurants, going to Six Flags and playing video games. I am looking for a full-time opportunity as a developer, so if my profile interests you, feel free to <a class="reachout" onClick={() => scrollToSection("contact")}>reach out</a>!</p>
                     </MoveInWhenVisibleBio>
                     <MoveInWhenVisibleBio>
                         <div className='resume' onClick={downloadResume}>
