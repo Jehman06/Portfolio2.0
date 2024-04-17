@@ -21,6 +21,16 @@ export const skills = [
 
 export const projects = [
     {
+        name: 'TaskRize',
+        images: [
+            process.env.PUBLIC_URL + '/TaskRize-screenshot.png',
+        ],
+        type: 'Project Management App',
+        description: 'TaskRize is a robust project management application. Offering a streamlined user experience, TaskRize empowers individuals and teams to efficiently organize tasks, collaborate seamlessly, and enhance productivity. With intuitive features and customizable boards, users can easily visualize workflows, assign tasks, track progress, and prioritize activities. TaskRize facilitates effective project management, fostering teamwork and enabling users to achieve their goals with ease.',
+        url: 'https://github.com/Jehman06/taskrize.git',
+        github: 'https://github.com/Jehman06/taskrize.git',
+    },
+    {
         name: 'Formify',
         images: [
             process.env.PUBLIC_URL + '/formify-login.png',
